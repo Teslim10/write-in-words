@@ -91,3 +91,6 @@ def getWords(number):
 # Reading number from user
 number = int(input('Enter any number: '))
 print('%d in words is: %s' % (number, getWords(number)))
+if input("Do you want to perform another conversion?").lower() == "yes":
+    getWords(number)
+else:print("Thank you!")
